@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.example.earnapp"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.example.earnapp"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {}
